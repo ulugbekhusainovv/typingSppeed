@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+.hidden {
+  display: none;
+}
+.btn {
+  border: 0;
+}
+
+.modall {
+  position: fixed;
+  max-width: 600px;
+  width: 100%;
+  background-color: rgba(204, 204, 204, 0.548);
+  padding: 30px 20px;
+  border-radius: 8px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+.modall-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+.modall-title {
+  margin-bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.text-center {
+  color: aqua;
+  font-size: 3rem;
+  text-align: center;
+}
+.close-btn {
+  color: #222;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 0;
+  background: transparent;
+  font-family: inherit;
+  cursor: pointer;
+}
+.titleScore {
+  font-size: 3rem;
+  text-align: center;
+}
+#closee {
+  display: flex;
+  /* justify-content: center; */
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 25px;
+  background-color: yellow;
+  align-items: center;
+  color: #000;
+  font-size: 1.5rem;
+}
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+.input-text {
+  font-size: 2rem;
+}
+
+.btns {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.btns::first-letter {
+  font-size: 2.4rem;
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+.btn--new {
+  bottom: 14rem;
+}
+
+.btns:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btns:focus {
+  outline: none;
+}
+.btn-none {
+  display: none;
+}
+.input-centr {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
